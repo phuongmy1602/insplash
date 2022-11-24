@@ -3,6 +3,7 @@ import Search from "./components/Search";
 import Category from "./components/Category";
 import { categories, pages } from "./category";
 import Content from "./components/Content";
+import GetImages from "./components/GetImages";
 
 function createCategory(cate) {
   return <Category key={cate.id} name={cate.name} link={cate.link} />;
@@ -36,9 +37,9 @@ function App() {
       </nav>
       <div class="cate">{categories.map(createCategory)}</div>
       <Content />
-
-      <section class="images">
-      </section>
+      <div>
+      <GetImages />
+      </div>
     </div>
   );
 }

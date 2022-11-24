@@ -215,7 +215,21 @@ a {
   color: #fff;
 }
 
-/* Images */
-.images {
-  margin: 2rem 3rem;
+/* gallery */
+.gallery{
+  width: 100%;
+  padding: 40px;
+  background: #fff;
+  columns: 4;
+  column-gap: 20px;
+}
+
+.gallery-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f9f9f9;
 }
