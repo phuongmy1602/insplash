@@ -38,7 +38,7 @@ function App() {
       <div class="cate">{categories.map(createCategory)}</div>
       <Content />
       <div>
-      <GetImages />
+        <GetImages />
       </div>
     </div>
   );

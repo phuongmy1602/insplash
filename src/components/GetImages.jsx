@@ -29,7 +29,7 @@ export default function GetImages() {
             <h1>Loading...</h1>
           </div>
         ) : (
-          <section>
+          <section >
             {images.map((image) => (
               <Article key={image.id} {...image} />
             ))}

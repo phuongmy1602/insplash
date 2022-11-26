@@ -1,33 +1,23 @@
-import { format } from "date-fns"
+import { format } from "date-fns";
 
-export default function Article({ id, urls, user, created_at, likes }) {
+function Article({ id, urls, user, created_at}) {
   return (
-    <>
       <div>
         <article key={id}>
-          <img
-            src={urls.regular}
-            alt={user.username}
-          />
+          <img src={urls.regular} alt={user.username} />
 
           <div>
-            <article >
-              <img
-                src={user.profile_image.medium}
-                alt={user.username}
-              />
+            <article>
+              <img src={user.profile_image.medium} alt={user.username} />
               <ul>
                 <li>{user.name}</li>
-                <li>
-                  {format(new Date(created_at), "dd MMMM yyyy")}
-                </li>
+                <li>{format(new Date(created_at), "dd MMMM yyyy")}</li>
               </ul>
             </article>
 
-            <article >
+            <article>
               <a
                 href={`https://instagram.com/${user.instagram_username}`}
-                className="text-sm text-slate-800 opacity-75 underline"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -37,6 +27,6 @@ export default function Article({ id, urls, user, created_at, likes }) {
           </div>
         </article>
       </div>
-    </>
-  )
+  );
 }
+export default Article;
