@@ -219,3 +219,6 @@ a {
   margin: 2rem 3rem;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
