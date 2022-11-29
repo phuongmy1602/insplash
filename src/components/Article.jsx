@@ -20,6 +20,7 @@ function Article({ id, urls, user, created_at }) {
           </article>
         </div>
       </article>
+      
     </div>
   );
 }
