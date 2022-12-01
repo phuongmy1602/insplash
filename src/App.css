@@ -133,7 +133,7 @@ a {
   display: flex;
   align-items: center;
   font-size: 14px;
-  padding: 0 20px 0 20px;
+  padding: 0 16px 0 16px;
 }
 
 .cate{
@@ -146,7 +146,7 @@ a {
 /* Hero */
 .hero {
   height: 600px;
-  background: url('https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1514&q=80') no-repeat right top;
+  background: url('https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat right top;
   background-size: 100% 770px;
   width: 100%;
   position: relative;
