@@ -1,81 +1,91 @@
-const pages = [
+const page = [
     {
         id :1, 
         name : "Explore",
-        link : "https://unsplash.com/explore"
+        link : "/explore"
     },
     {
         id :2, 
         name : "Advertise",
-        link : "https://unsplash.com/advertise"
+        link : "/advertise"
     },
     {
         id :3, 
         name : "Unsplash+",
-        link : "https://unsplash.com/plus"
-    }
+        link : "/plus"
+    }, 
+    {
+        id :4, 
+        name : "Log in",
+        link : "/login"
+    }, 
+    {
+        id :5, 
+        name : "Sign up",
+        link : "/signup"
+    }, 
 ]
-const categories = [
+const theme = [
     {
         id :1, 
         name : "Editorial",
-        link : "index.html"
+        link : "/"
     },
     {
         id :2, 
         name : "Experimental",
-        link : "https://unsplash.com/t/experimental"
+        link : "/t/experimental"
     },
     {
         id :3, 
         name : "3D Renders",
-        link : "https://unsplash.com/t/3d-renders"
+        link : "/t/3d-renders"
     },
     {
         id :4, 
         name : "Architecture & Interiors",
-        link : "https://unsplash.com/t/architecture-interior"
+        link : "/t/architecture-interior"
     },
     {
         id :5, 
         name : "Fashion & Beauty",
-        link : "https://unsplash.com/t/fashion-beauty"
+        link : "/t/fashion-beauty"
     },
     {
         id :6, 
         name : "Current Events",
-        link : "https://unsplash.com/t/current-events"
+        link : "/t/current-events"
     },
     {
         id :7, 
         name : "Nature",
-        link : "https://unsplash.com/t/nature"
+        link : "/t/nature"
     },
     {
         id :8, 
         name : "Food & Drink",
-        link : "https://unsplash.com/t/food-drink"
+        link : "/t/food-drink"
     },
     {
         id :9, 
         name : "Film",
-        link : "https://unsplash.com/t/film"
+        link : "/t/film"
     },
     {
         id :10, 
         name : "People",
-        link : "https://unsplash.com/t/people"
+        link : "/t/people"
     },
     {
         id :11, 
         name : "Athletics",
-        link : "https://unsplash.com/t/athletics"
+        link : "/t/athletics"
     },
     {
         id :12, 
         name : "Street Photographty",
-        link : "https://unsplash.com/t/street-photography"
+        link : "/t/street-photography"
     },
 ]
 
-export {categories, pages};
+export {theme, page};
