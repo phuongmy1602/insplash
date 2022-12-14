@@ -16,11 +16,15 @@ function GetImages() {
         `https://api.unsplash.com/photos?client_id=dGQW3GmLHf7erXuRLChVXH1C-MWMgYYIHlugEwcSMt4&per_page=30`
       )
       .then((res) => {
-        setImages([...images, ...res.data]);
+        if (res.status !== 200) {
+          return false;
+        }
+        if (Array.isArray(res.data) === true) {
+          setImages([...images, ...res.data]);
+        }
       })
       .catch((err) => {
         console.log(err.response);
-        return err.response;
       });
   };
 
