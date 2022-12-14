@@ -10,9 +10,11 @@ const ThemeNavbar = () => {
         </NavLink>
         {themes.map((theme) => {
           return (
-            <NavLink to={`/t/${theme.id}`} className="pages">
-              {theme.name}
-            </NavLink>
+            <div key={theme.id}>
+              <NavLink to={`/t/${theme.id}`} className="pages">
+                {theme.name}
+              </NavLink>
+            </div>
           );
         })}
       </nav>

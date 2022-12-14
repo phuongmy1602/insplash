@@ -10,9 +10,11 @@ const Navbar = () => {
         <nav className="nav">
           {pages.map((page) => {
             return (
-              <NavLink to={`${page.id}`} className="pages">
-                {page.name}
-              </NavLink>
+              <div key={page.id}>
+                <NavLink to={`${page.id}`} className="pages">
+                  {page.name}
+                </NavLink>
+              </div>
             );
           })}
         </nav>
