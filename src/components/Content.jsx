@@ -17,7 +17,7 @@ function Content() {
           </form>
         </div>
         <div className="trending-search-tags">
-          <p>Trending searches: <a href="#">flower</a>, <a href="#">wallpaper</a>, <a href="#">sad</a>, <a href="#">love</a></p>
+          <p>Trending: <a href="#">flower</a>, <a href="#">wallpapers</a>, <a href="#">backgrounds</a>, <a href="#">happy</a>, <a href="#">love</a></p>
         </div>
       </div>
     </div>

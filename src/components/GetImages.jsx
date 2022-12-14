@@ -11,11 +11,16 @@ function GetImages() {
   }, []);
 
   const fetchImages = () => {
-
     axios
-      .get(`https://api.unsplash.com/photos?client_id=dGQW3GmLHf7erXuRLChVXH1C-MWMgYYIHlugEwcSMt4`)
+      .get(
+        `https://api.unsplash.com/photos?client_id=dGQW3GmLHf7erXuRLChVXH1C-MWMgYYIHlugEwcSMt4&per_page=30`
+      )
       .then((res) => {
         setImages([...images, ...res.data]);
+      })
+      .catch((err) => {
+        console.log(err.response);
+        return err.response;
       });
   };
 
@@ -31,11 +36,11 @@ function GetImages() {
             <h1>Loading...</h1>
           </div>
         ) : (
-            <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 pb-20 lg:container">
-              {images.map((image) => (
-                <Article key={image.id} {...image} />
-              ))}
-            </section>
+          <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 pb-20 lg:container">
+            {images.map((image) => (
+              <Article key={image.id} {...image} />
+            ))}
+          </section>
         )}
       </div>
     </>

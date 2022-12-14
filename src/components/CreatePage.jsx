@@ -1,6 +1,6 @@
 import React from "react";
 
-function Category(props) {
+function CreatePage(props) {
   return (
     <div className="pages">
       <a href={props.link}>{props.name}</a>
@@ -8,4 +8,4 @@ function Category(props) {
   );
 }
 
-export default Category;
+export default CreatePage;

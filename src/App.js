@@ -1,46 +1,32 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Search from "./components/Search";
-import Category from "./components/Category";
-import { categories, pages } from "./category";
-import Content from "./components/Content";
-import GetImages from "./components/GetImages";
 
-function createCategory(cate) {
-  return <Category key={cate.id} name={cate.name} link={cate.link} />;
-}
+import Editorial from "./pages/Editorial";
+import Explore from "./pages/Explore";
+import Advertise from "./pages/Advertise";
+import InsplashPlus from "./pages/InsplashPlus";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Submit from "./pages/Submit";
+import SharedLayout from "./components/Layout";
+import SingleTheme from "./components/themes/SingleTheme";
 
 function App() {
   return (
-    <div className="App">
-      <nav className="navbar">
-        <div className="left">
-          <div className="logo">
-            <a href="index.html">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEUAAAD////V1dWWlpZ0dHTPz89qamrh4eGQkJDk5OTR0dGtra3Y2NgWv+ptAAABL0lEQVR4nO3cMQ7CQAxFwQCBQOD+56Wms2RHxjDvAKs/vbXLqaR1qW+tmbbUPENISJiIMBghIWEiwmCEhISJCIMREhImIgxGSEiYiDAYISFhIsJghISEiQiDERISJiIMRkhImIgwGCEhYSLCYISEhIkIgxESEiYiDPb7wtsBwlvNtCLhdq5vq5lWJPziCOdHOD/C+RHOj3B+hPMjnB/h/AjnRzg/wvkRzo9wfoTzI5wf4fz+QHip6P44YNrjXrKt6KrgeoDwWrStJkJCwv4ICQn7IyQk7I+QkLA/QkLC/ggJCfsjJCTsj5CQsD9CQsL+CAkJ+yMkJOyPkJCwP0JCwv4ICQn7IyQk7G8/QLh3oz56vsq/oH09u1GSJEmSJEmSJEmSJEmSJEmSJEmSJP1rbwwaXQZE0kwUAAAAAElFTkSuQmCC"
-                alt="logo image"
-                className="logo"
-              />
-            </a>
-          </div>
-        </div>
-        <Search />
-        <div className="pages">{pages.map(createCategory)}</div>
-        <ul className="nav">
-          <li>
-            <a href="#">Login / Sign up</a>
-          </li>
-          <li>
-            <a href="#">Submit a photo</a>
-          </li>
-        </ul>
-      </nav>
-      <div className="cate">{categories.map(createCategory)}</div>
-      <Content />
-      <div>
-        <GetImages />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes className="nav">
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Editorial />}/>
+          <Route path="t/:themeId" element={<SingleTheme />} />
+          <Route path="explore" element={<Explore />} />
+          <Route path="advertise" element={<Advertise />} />
+          <Route path="plus" element={<InsplashPlus />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="submit" element={<Submit />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
