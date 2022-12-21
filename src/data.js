@@ -46,31 +46,4 @@ const themes = [
   },
 ];
 
-const pages = [
-  {
-    id: "explore",
-    name: "Explore",
-  },
-  {
-    id: "advertise",
-    name: "Advertise",
-  },
-  {
-    id: "plus",
-    name: "Insplash+",
-  },
-  {
-    id: "login",
-    name: "Login",
-  },
-  {
-    id: "signup",
-    name: "Sign Up",
-  },
-  {
-    id: "submit",
-    name: "Submit a photo",
-  }
-]
-
-export { themes, pages };
+export { themes};

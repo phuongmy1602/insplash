@@ -114,34 +114,63 @@ a {
 
 .nav-search-form {
   margin-left: 1rem;
+  background-color: #E8E8E8;
+  border-radius: 24px;
+
 }
 
 .nav-search-form input {
-  padding: 0.7rem;
-  border-radius: 20px;
-  border: none;
-  background-color: #eee;
-  width: 600px;
+  background-color: #E8E8E8;
+  height: 40px;
   font-size: 0.9rem;
-  color: #333;
+  position: relative;
+  width: 540px;
+
+}
+.nav-search-form input:focus {
+  outline-width: 0;
+}
+.nav-search-form button {
+  color: inherit;
+  cursor: pointer;
+  margin: 0 20px 0 20px;
 }
 
-.nav-search-form input:focus {
-  background: #fff;
-  width: 428px;
-}
 .pages {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 12px 0 12px;
+}
+
+.themes{
   display: flex;
   align-items: center;
   font-size: 14px;
   padding: 0 16px 0 16px;
 }
 
-.cate{
-  display: flex;
-  align-items: center;
+.barBtn{
+  font-size: 18px;
+}
+.subBtn{
+  border: 1px solid lightgray;
+  border-radius: 4px;
   font-size: 14px;
-  padding-bottom: 20px;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 10px 0 10px;
+  box-shadow: 0 1px 1px #0000000a;
+}
+
+div.slash{
+  height: 32px;
+  width: 1px;
+  background-color: lightgrey;
+}
+
+div.space{
+  width: 12px;
 }
 
 /* Hero */
@@ -226,6 +255,15 @@ a {
 
 
 /* Theme */
+.themes{
+  display: flex;
+  padding-bottom: 10px;
+}
+.editorial {
+  display: flex;
+  align-items: center;
+  padding: 0 10px 10px 0;
+}
 .theme {
   height: 600px;
   background: url('https://images.unsplash.com/photo-1668150778004-5c90be1a9243?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
@@ -269,3 +307,4 @@ a {
   padding: 0 16px;
 
 }
+
