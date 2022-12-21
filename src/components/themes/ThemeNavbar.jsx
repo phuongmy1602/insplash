@@ -4,14 +4,15 @@ import { themes } from "../../data";
 const ThemeNavbar = () => {
   return (
     <div className="nav">
-      <nav className="nav">
-        <NavLink to="/" className="pages">
+      <nav className="themes">
+        <NavLink to="/" className="editorial">
           Editorial
         </NavLink>
+        <div className="slash"></div>
         {themes.map((theme) => {
           return (
             <div key={theme.id}>
-              <NavLink to={`/t/${theme.id}`} className="pages">
+              <NavLink to={`/t/${theme.id}`} className="themes">
                 {theme.name}
               </NavLink>
             </div>
