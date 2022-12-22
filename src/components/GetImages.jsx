@@ -31,10 +31,6 @@ function GetImages() {
   return (
     <>
       <div className="container mx-auto px-5 2xl:px-0">
-        <p className="text-slate-800 font-bold text-3xl md:text-4xl lg:text-6xl my-10 lg:mt-20 lg:mb-14">
-          Recommended For You
-        </p>
-
         {!images ? (
           <div>
             <h1>Loading...</h1>

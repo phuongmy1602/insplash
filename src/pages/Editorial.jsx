@@ -1,12 +1,12 @@
 import React from "react";
 import Content from "../components/Content";
 import GetImages from "../components/GetImages";
-import ThemeLayout from "../components/themes/ThemeLayout";
+import ThemeNavbar from "../components/themes/ThemeNavbar";
 
 function Editorial() {
   return (
     <div>
-      <ThemeLayout />
+      <ThemeNavbar />
       <Content />
       <GetImages />
     </div>

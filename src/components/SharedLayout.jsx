@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
+import SharedNavbar from './SharedNavbar';
 const SharedLayout = () => {
   return (
     <>
-      <Header />
+      <SharedNavbar />
       <Outlet />
     </>
   );
