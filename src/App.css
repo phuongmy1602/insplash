@@ -1,59 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* Global */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: 'Helvetica', sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  color: #999;
-  text-decoration: none;
 }
 
 /* Navbar */
@@ -61,7 +11,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 10px;
 }
 
 .left {
@@ -79,11 +29,11 @@ a {
 }
 
 .logo h1 {
-  font-size: 1.1rem;
+  font-size: 11px;
 }
 
 .logo p {
-  font-size: 1rem;
+  font-size: 10px;
 }
 
 .nav {
@@ -92,7 +42,7 @@ a {
 }
 
 .nav li {
-  margin-right: 1.2rem;
+  margin-right: 12px;
 }
 
 .nav li a {
@@ -103,7 +53,7 @@ a {
   display: block;
   background: #3cb46e;
   color: #fff;
-  padding: 0.5rem 0.6rem;
+  padding: 5px 6px;
   border-radius: 5px;
   transition: filter 0.5s;
 }
@@ -113,7 +63,7 @@ a {
 }
 
 .nav-search-form {
-  margin-left: 1rem;
+  margin-left: 10px;
   background-color: #E8E8E8;
   border-radius: 24px;
 
@@ -122,7 +72,7 @@ a {
 .nav-search-form input {
   background-color: #E8E8E8;
   height: 40px;
-  font-size: 0.9rem;
+  font-size: 14px;
   position: relative;
   width: 540px;
 
@@ -134,20 +84,6 @@ a {
   color: inherit;
   cursor: pointer;
   margin: 0 20px 0 20px;
-}
-
-.pages {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  padding: 0 12px 0 12px;
-}
-
-.themes{
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  padding: 0 16px 0 16px;
 }
 
 .barBtn{
@@ -180,6 +116,7 @@ div.space{
   background-size: 100% 770px;
   width: 100%;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .hero-overlay {
@@ -205,7 +142,7 @@ div.space{
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 30px;
   color: #fff;
   z-index: 2;
 }
@@ -213,27 +150,26 @@ div.space{
 .hero-content p {
   color: #fff;
   z-index: 2;
-  margin: 1rem 0;
+  margin: 10px 0;
   line-height: 1.5;
 }
 
 .hero-search-form {
   z-index: 2;
-  margin: 1rem 0.6rem 0 0;
+  margin: 10px 6px 0 0;
 }
 
 .hero-search-form input {
   width: 100%;
-  padding: 1.2rem;
+  padding: 12px;
   border-radius: 5px;
   border: none;
   color: #000;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 .trending-search-tags {
   z-index: 2;
-  ;
 }
 
 .trending-search-tags a {
@@ -246,24 +182,28 @@ div.space{
 }
 
 .images {
-  margin: 2rem 3rem;
+  margin: 20px 30px;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 /* Theme */
-.themes{
-  display: flex;
-  padding-bottom: 10px;
-}
-.editorial {
+
+.pages {
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  padding: 0 10px 10px 0;
+  font-size: 14px;
+  padding: 0 12px 0 12px;
+  color: gray;
 }
+
+.active {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 12px 0 12px;
+  color: black;
+}
+
 .theme {
   height: 600px;
   background: url('https://images.unsplash.com/photo-1668150778004-5c90be1a9243?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
@@ -285,7 +225,7 @@ div.space{
 }
 
 .theme-content h1 {
-  font-size: 3rem;
+  font-size: 30px;
   color: #fff;
   z-index: 2;
 }
@@ -293,7 +233,7 @@ div.space{
 .theme-content p {
   color: #fff;
   z-index: 2;
-  margin: 1rem 0;
+  margin: 10px 0;
   line-height: 1.5;
 }
 
@@ -305,6 +245,35 @@ div.space{
   height: 44px;
   line-height: 2px;
   padding: 0 16px;
-
 }
 
+.awards {
+  height: 179.88px;
+  width: 1296px;
+  background: url('https://unsplash-assets.imgix.net/marketing/awards/awards-logo-small.png');
+  background-color: #111;
+  background-size: 25%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 40px 25px 40px 25px;
+  padding: 40px 12px 40px 12px;
+}
+
+.awardsp1 {
+color: white;
+font-size: 28px;
+font-family: Helvetica ;
+}
+
+.awardsp2 {
+  color: white;
+  font-size: 18px;
+  opacity: 0.8;
+  }
+
+.awards span{
+color: white;
+text-decoration: underline;
+font-size: 18px;
+}

@@ -44,6 +44,10 @@ const themes = [
     id: "street-photography",
     name: "Street Photographty",
   },
+  {
+    id: "art-culture",
+    name: "Arts & Culture",
+  },
 ];
 
 export { themes};
