@@ -22,6 +22,7 @@ function GetImages() {
         if (Array.isArray(res.data) === true) {
           setImages([...images, ...res.data]);
         }
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err.response);
@@ -30,7 +31,7 @@ function GetImages() {
 
   return (
     <>
-      <div className="container mx-auto px-5 2xl:px-0">
+      <div className="container mx-auto px-6 2xl:px-0">
         {!images ? (
           <div>
             <h1>Loading...</h1>
