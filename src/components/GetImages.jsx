@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-import Article from "./Article";
+import Gallery from "./Gallery";
 
 function GetImages() {
   const [images, setImages] = useState([]);
@@ -31,17 +31,17 @@ function GetImages() {
 
   return (
     <>
-      <div className="container mx-auto px-6 2xl:px-0">
+      <div>
         {!images ? (
           <div>
             <h1>Loading...</h1>
           </div>
         ) : (
-          <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 pb-20 lg:container">
+          <div className="gallery">
             {images.map((image) => (
-              <Article key={image.id} {...image} />
+              <Gallery key={image.id} {...image} />
             ))}
-          </section>
+          </div>
         )}
       </div>
     </>
