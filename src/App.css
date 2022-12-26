@@ -36,9 +36,21 @@ body {
   font-size: 10px;
 }
 
-.nav {
+.sharednav {
+  height: 62px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.themenav {
+  height: 56px;
+  background: #fff;
+  position: sticky;
+  top: 62px;
+  z-index: 99;
   display: flex;
-  align-items: center;
 }
 
 .nav li {
@@ -202,6 +214,12 @@ div.space{
   font-size: 14px;
   padding: 0 12px 0 12px;
   color: black;
+}
+
+.highlight {
+  font-size: 14px;
+  white-space: nowrap;
+  margin-bottom: solid 2px black;
 }
 
 .theme {

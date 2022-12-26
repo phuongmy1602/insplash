@@ -10,15 +10,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-slate-100;
-}
-
-.profile-image {
-  height: 30rem;
-}
-
-@media (min-width: 1024px) {
-  .hero-image {
-    height: 40rem;
-  }
+  @apply bg-white;
 }

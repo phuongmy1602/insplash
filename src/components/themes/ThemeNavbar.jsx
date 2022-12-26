@@ -3,7 +3,7 @@ import { themes } from "../../data";
 
 const ThemeNavbar = () => {
   return (
-    <div className="nav">
+    <div className="themenav">
       <nav className="pages">
         <NavLink to="/" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>
           Editorial
