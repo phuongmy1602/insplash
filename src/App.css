@@ -8,6 +8,7 @@ body {
 
 /* Navbar */
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +79,7 @@ body {
   margin-left: 10px;
   background-color: #E8E8E8;
   border-radius: 24px;
-
+  width: 45%;
 }
 
 .nav-search-form input {
@@ -86,7 +87,7 @@ body {
   height: 40px;
   font-size: 14px;
   position: relative;
-  width: 540px;
+  width: 80%;
 
 }
 .nav-search-form input:focus {
@@ -268,7 +269,7 @@ div.space{
 
 .awards {
   height: 179.88px;
-  width: 1296px;
+  width: 96%;
   background: url('https://unsplash-assets.imgix.net/marketing/awards/awards-logo-small.png');
   background-color: #111;
   background-size: 25%;
@@ -300,7 +301,7 @@ font-size: 18px;
 /* Gallery */
 
 .gallery {
-  width: 1296px;
+  width: 96%;
   margin: 0px 25px 0px 25px;
   column-count: 3;
   column-gap: 24px;
@@ -332,3 +333,95 @@ display: inline-block;
   opacity: 0.8;
   font-size: 11px;
 }
+
+/* Media query */
+@media (max-width: 767px){
+ .navbar{
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  padding: 8px 12px;
+  }
+
+  .logo {
+    width: 26px;
+    height: 26px;
+  }
+  .nav-search-form {
+    width: 70%;
+  }
+  .nav-search-form input {
+    width: 60%;
+  }
+  .camera, .slash , .pages, .subBtn, .themenav {
+    display: none;
+  }
+  .awards {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .awardsp1 {
+    font-size: 21px;
+  }
+  .awardsp2 {
+    font-size: 15px;
+  }
+  .awards span {
+    font-size: 15px;
+  }
+  .gallery {
+    width: 96%;
+    margin: auto;
+    column-count: 1;
+    column-gap: 0;
+  }
+  .info {
+    top: 0;
+    color: black;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar{
+   align-items: center;
+   background-color: #fff;
+   display: flex;
+   padding: 8px 12px;
+   }
+   .logo {
+     width: 26px;
+     height: 26px;
+   }
+   .nav-search-form {
+     border-radius: 24px;
+     width: 60%;
+   }
+   .nav-search-form input {
+     width: 72%;
+   }
+   .themenav, .subBtn, .slash, .pages {
+     display: none;
+   }
+   .awards {
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .awardsp1 {
+     font-size: 21px;
+   }
+   .awardsp2 {
+     font-size: 15px;
+   }
+   .awards span {
+     font-size: 15px;
+   }
+   .gallery {
+     width: 96%;
+     margin: auto;
+     column-count: 2;
+   }
+   .info {
+     top: 0;
+     color: black;
+   }
+ }
