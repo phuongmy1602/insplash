@@ -29,7 +29,7 @@ function SharedNavbar() {
               type="text"
               placeholder="Search free high-resolution photos"
             />
-            <button>
+            <button className="camera">
               <FontAwesomeIcon icon={faCamera} />
             </button>
           </form>
