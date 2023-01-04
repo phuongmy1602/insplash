@@ -5,9 +5,12 @@ import {
   faMagnifyingGlass,
   faCamera,
   faBars,
+  faBell,
+  faCircleUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 function SharedNavbar() {
+  let isLogged = false;
   return (
     <header className="sharednav">
       <nav className="navbar">
@@ -36,35 +39,60 @@ function SharedNavbar() {
         </div>
         <ul className="pages">
           <li>
-            <NavLink to="/explore" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>
+            <NavLink
+              to="/explore"
+              className={({ isActive }) => (isActive ? "link active" : "pages")}
+            >
               Explore
             </NavLink>
           </li>
           <li>
-            <NavLink to="/advertise" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>
+            <NavLink
+              to="/advertise"
+              className={({ isActive }) => (isActive ? "link active" : "pages")}
+            >
               Advertise
             </NavLink>
           </li>
           <li>
-            <NavLink to="/plus" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>
+            <NavLink
+              to="/plus"
+              className={({ isActive }) => (isActive ? "link active" : "pages")}
+            >
               Insplash+
             </NavLink>
           </li>
         </ul>
-        <div className="slash"></div>
+        <div className={isLogged ? "logged" : "slash"}></div>
         <div className="pages">
-          <NavLink to="/login" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>
+          <NavLink
+            to="/login"
+            className={isLogged ? "logged" : "pages"}
+          >
             Login
           </NavLink>
-          /
-          <NavLink to="/signup" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>
+          <NavLink
+            to="/join"
+            className={isLogged ? "logged" : "pages"}
+          >
             Sign up
           </NavLink>
         </div>
         <button className="subBtn">
-          <NavLink to="/submit" className={({ isActive }) => (isActive ? 'link active' : 'pages')}>Submit a photo</NavLink>
+          <NavLink
+            to="/submit"
+            className={({ isActive }) => (isActive ? "link active" : "pages")}
+          >
+            Submit a photo
+          </NavLink>
         </button>
         <div className="space"></div>
+        <button className={!isLogged ? "logged" : "baeBtn"}>
+          <FontAwesomeIcon icon={faBell} />
+        </button>
+        <button className={!isLogged ? "logged" : "baeBtn"}>
+          <FontAwesomeIcon icon={faCircleUser} />
+        </button>
         <button className="barBtn">
           <FontAwesomeIcon icon={faBars} />
         </button>
