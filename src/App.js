@@ -21,10 +21,10 @@ function App() {
           <Route path="explore" element={<Explore />} />
           <Route path="advertise" element={<Advertise />} />
           <Route path="plus" element={<InsplashPlus />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="submit" element={<Submit />} />
         </Route>
+        <Route path="login" element={<Login />} />
+        <Route path="join" element={<SignUp />} />
+        <Route path="submit" element={<Submit />} />
       </Routes>
     </BrowserRouter>
   );
