@@ -17,7 +17,7 @@ function Login() {
           <p>Welcome back.</p>
         </div>
         <div className="form-group">
-          <a className="login-fb-Btn">Login with Facebook</a>
+          <a href="https://www.facebook.com" className="login-fb-Btn">Login with Facebook</a>
         </div>
         <div className="form-separator">
           <p>OR</p>

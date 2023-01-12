@@ -336,7 +336,7 @@ display: inline-block;
   font-size: 11px;
 }
 
- /* Register and Login */
+ /* Login */
  .logged {
   display: none;
  }
@@ -439,6 +439,129 @@ display: inline-block;
 .sublink {
   color: #767676;
   text-decoration: underline;
+}
+
+/* Register */
+.register-container{
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel{
+  width: 40%;
+  background-image: url('https://images.unsplash.com/photo-1673089197761-5988cb32e459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+.register-content{
+  padding: 8% 10%;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.register-content::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.4;
+  z-index: -1;
+}
+.register-logo{
+  width: 36px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  vertical-align: middle;
+}
+.register-title{
+  padding-top: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.register-subtitle{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.register-credit{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 16px 0;
+}
+
+.right-panel{
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 80px 10% 20px 10%;
+}
+
+.login-form{
+  width: 100%;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+  width: 83.3333333333%;
+}
+
+.text-center{
+  padding-bottom: 60px;
+  text-align: center;
+}
+.text-center h4{
+  font-weight: 700;
+  margin: 0 0 16px;
+  font-size: 46px;
+  line-height: 1.2;
+}
+.text-center p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 16px 0;
+}
+
+.col-xs-6 {
+  width: 45%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.row:after {
+  clear: both;
+  display: table;
+}
+.text-decor{
+  color: #767676;
+}
+.text-secondary {
+  color: #767676;
+  font-size: 13px !important;
+  line-height: 18px;
 }
 
 /* Media queries */
