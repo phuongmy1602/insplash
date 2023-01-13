@@ -449,13 +449,13 @@ display: inline-block;
 
 .left-panel{
   width: 40%;
-  background-image: url('https://images.unsplash.com/photo-1673089197761-5988cb32e459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+  background-image: url('https://images.unsplash.com/photo-1673458028748-b2d3012e2201?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80');
   background-size: cover;
   background-position: center center;
   color: #fff;
 }
 .register-content{
-  padding: 8% 10%;
+  padding: 12px;
   position: relative;
   z-index: 10;
   height: 100%;
@@ -482,16 +482,16 @@ display: inline-block;
   vertical-align: middle;
 }
 .register-title{
-  padding-top: 0;
-  font-size: 48px;
   font-weight: 700;
+  font-size: 30px;
   line-height: 1;
   margin: 0;
   margin-bottom: 16px;
+  padding-top: 30px;
 }
 .register-subtitle{
-  font-size: 24px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 1.35;
   margin: 0;
   padding-bottom: 30px;
@@ -513,9 +513,6 @@ display: inline-block;
   padding: 80px 10% 20px 10%;
 }
 
-.login-form{
-  width: 100%;
-}
 
 .center-block {
   display: block;
@@ -609,9 +606,35 @@ display: inline-block;
     top: 0;
     color: black;
   }
+  .loginPage {
+    width: 94%;
+  }
+  .register-container{
+    flex-direction: column;
+  }
+  .left-panel{
+    width: 100%;
+  }
+  .right-panel{
+    padding-top: 30px;
+  }
+  .register-credit{
+    display: none;
+  }
+  .text-center h4{
+    font-size: 28px;
+  }
+  .center-block {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .text-center{
+    padding-bottom: 30px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) {
   .navbar{
    align-items: center;
    background-color: #fff;
@@ -654,5 +677,18 @@ display: inline-block;
      top: 0;
      color: black;
    }
+   .loginPage {
+    width: 60%;
+  }
+  .register-content{
+    padding: 8% 10%;
+  }
+  .register-title{
+    padding-top: 0;
+    font-size: 48px;
+  }
+  .register-subtitle{
+    font-size: 24px;
+  }
  }
 

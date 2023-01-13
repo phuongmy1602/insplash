@@ -37,7 +37,7 @@ function Login() {
             <input className="form-control" type="password" name="" id="" />
           </div>
           <div className="form-group">
-            <input className="login-sub" type="submit" name="commit" value="Login" />
+          <a className="login-sub" href="/">Login</a>
           </div>
         </form>
         <div className="login-cta">
